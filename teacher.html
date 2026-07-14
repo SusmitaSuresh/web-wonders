@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Task Management</title>
+    <link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+    <header>
+
+    <div class="logo">
+        <img src="teacher.jpeg" alt="Teacher Logo">
+        <h2>Teacher Portal</h2>
+    </div>
+
+    <nav>
+        <a href="#">Logout</a>
+    </nav>
+
+</header>
+    <section>
+
+        <!-- Search -->
+        <input
+            type="text"
+            placeholder="Search Task...">
+    </section>
+
+    <hr>
+
+    <!-- Task Card 1 -->
+
+    <section class="task-card">
+        <h2>Linked List</h2>
+
+        <p><strong>Subject:</strong> DSA</p>
+
+        <p><strong>Due Date:</strong> 20 Aug 2026</p>
+
+        <p><strong>Priority:</strong> High</p>
+
+        <p><strong>Maximum Points:</strong> 20</p>
+
+        <button>View</button>
+        <button>Edit</button>
+        <button>Delete</button>
+        <button>Submissions</button>
+
+    </section>
+
+    <hr>
+
+    <!-- Task Card 2 -->
+
+    <section class="task-card">
+
+        <h2>Sorting </h2>
+
+        <p><strong>Subject:</strong> DSA</p>
+
+        <p><strong>Due Date:</strong> 28 Aug 2026</p>
+
+        <p><strong>Priority:</strong> Medium</p>
+
+        <p><strong>Maximum Points:</strong> 15</p>
+
+        <button>View</button>
+        <button>Edit</button>
+        <button>Delete</button>
+        <button>Submissions</button>
+
+    </section>
+    <button id="createTaskBtn">Create Task</button>
+    <button class="viewBtn">View</button>
+    <button class="editBtn">Edit</button>
+    <button class="deleteBtn">Delete</button>
+    <button class="submissionBtn">Submissions</button>
+    <a href="#" id="logoutBtn">Logout</a>
+    <script src=""teacher.js></script>
+    <!-- Create Task Popup -->
+
+<div id="taskForm" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <h2>Create Task</h2>
+
+        <label>Task Title</label>
+        <input type="text">
+
+        <label>Subject</label>
+        <select>
+            <option>DSA</option>
+            <option>OOPS</option>
+            <option>DBMS</option>
+        </select>
+
+        <label>Due Date</label>
+        <input type="date">
+
+        <label>Maximum Points</label>
+        <input type="number">
+
+        <button>Save Task</button>
+
+    </div>
+
+</div>
+</body>
+</html>

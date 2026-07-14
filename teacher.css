@@ -1,0 +1,299 @@
+/* ================= RESET ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* ================= BODY ================= */
+
+body{
+    background:#f4f6f9;
+    padding:10px;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background:#2563eb;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:40px;
+    height:40px;
+    object-fit:cover;
+}
+
+header h2{
+    font-size:28px;
+}
+
+/* ================= NAVIGATION ================= */
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* ================= SEARCH SECTION ================= */
+
+section:first-of-type{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+section:first-of-type input{
+    width:250px;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+/* ================= CREATE TASK BUTTON ================= */
+
+section:first-of-type button{
+    margin-left:auto;
+    background:#22c55e;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+section:first-of-type button:hover{
+    background:#16a34a;
+}
+
+/* ================= TASK CARDS ================= */
+
+.task-card{
+    background:white;
+    margin-top:25px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.task-card h2{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.task-card p{
+    margin:8px 0;
+    color:#444;
+}
+
+/* ================= TASK BUTTONS ================= */
+
+.task-card button{
+    margin-top:15px;
+    margin-right:10px;
+    padding:10px 18px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    color:white;
+}
+
+/* View */
+
+.task-card button:nth-of-type(1){
+    background:#3b82f6;
+}
+
+/* Edit */
+
+.task-card button:nth-of-type(2){
+    background:#f59e0b;
+}
+
+/* Delete */
+
+.task-card button:nth-of-type(3){
+    background:#ef4444;
+}
+
+/* Submissions */
+
+.task-card button:nth-of-type(4){
+    background:#8b5cf6;
+}
+
+.task-card button:hover{
+    opacity:0.85;
+}
+
+/* ================= HORIZONTAL LINE ================= */
+
+hr{
+    border:none;
+    height:1px;
+    background:#ddd;
+    margin:25px 0;
+}
+
+/* =====================================================
+                    POPUP (MODAL)
+===================================================== */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.5);
+
+}
+
+/* White Popup Box */
+
+.modal-content{
+
+    background:white;
+
+    width:420px;
+
+    margin:7% auto;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    position:relative;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+
+}
+
+/* Popup Heading */
+
+.modal-content h2{
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+/* Labels */
+
+.modal-content label{
+
+    display:block;
+
+    margin-top:12px;
+
+    font-weight:bold;
+
+}
+
+/* Inputs */
+
+.modal-content input,
+.modal-content select{
+
+    width:100%;
+
+    padding:10px;
+
+    margin-top:8px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:6px;
+
+    font-size:15px;
+
+}
+
+/* Save Button */
+
+.modal-content button{
+
+    width:100%;
+
+    margin-top:10px;
+
+    padding:12px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+.modal-content button:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* Close Button */
+
+.close{
+
+    position:absolute;
+
+    top:12px;
+
+    right:18px;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    color:#666;
+
+}
+
+.close:hover{
+
+    color:red;
+
+}
