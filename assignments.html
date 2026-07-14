@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Assignments</title>
+    <link rel="stylesheet" href="assignments.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">StudyTracker</div>
+
+    <nav>
+        <a href="student-dashboard.html">Dashboard</a>
+        <a href="assignments.html" class="active">Assignments</a>
+        <a href="#">Logout</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <h1>📚 My Assignments</h1>
+
+    <p>Track your homework, projects and upcoming deadlines.</p>
+
+</section>
+
+<section class="controls">
+
+    <input type="text" placeholder="🔍 Search assignments...">
+
+    <select>
+        <option>All Status</option>
+        <option>Pending</option>
+        <option>Completed</option>
+    </select>
+
+    <select>
+        <option>All Priorities</option>
+        <option>High</option>
+        <option>Medium</option>
+        <option>Low</option>
+    </select>
+
+    <select>
+        <option>All Subjects</option>
+        <option>Physics</option>
+        <option>Chemistry</option>
+        <option>Mathematics</option>
+        <option>English</option>
+    </select>
+
+</section>
+
+<section class="assignments">
+
+    <div class="card">
+
+        <h2>Physics Homework</h2>
+
+        <p><strong>Teacher:</strong> Dr. Kumar</p>
+
+        <p><strong>Subject:</strong> Physics</p>
+
+        <div class="priority-section">
+
+    <label><strong>Priority:</strong></label>
+
+    <select class="priority-select">
+
+        <option value="High">High</option>
+
+        <option value="Medium">Medium</option>
+
+        <option value="Low">Low</option>
+
+    </select>
+
+    </div>
+
+        <p><strong>Status:</strong> Pending</p>
+
+        <p><strong>Deadline:</strong> 10 July 2026</p>
+
+        <div class="buttons">
+
+            <button class="view">View</button>
+
+            <button class="complete">Mark Complete</button>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Chemistry Assignment</h2>
+
+        <p><strong>Teacher:</strong> Dr. Sharma</p>
+
+        <p><strong>Subject:</strong> Chemistry</p>
+
+        <div class="priority-section">
+
+    <label><strong>Priority:</strong></label>
+
+    <select class="priority-select">
+
+        <option value="High">High</option>
+
+        <option value="Medium">Medium</option>
+
+        <option value="Low">Low</option>
+
+    </select>
+
+</div>
+
+        <p><strong>Status:</strong> Pending</p>
+
+        <p><strong>Deadline:</strong> 12 July 2026</p>
+
+        <div class="buttons">
+
+            <button class="view">View</button>
+
+            <button class="complete">Mark Complete</button>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Mathematics Worksheet</h2>
+
+        <p><strong>Teacher:</strong> Dr. Rao</p>
+
+        <p><strong>Subject:</strong> Mathematics</p>
+
+       <div class="priority-section">
+
+    <label><strong>Priority:</strong></label>
+
+    <select class="priority-select">
+
+        <option value="High">High</option>
+
+        <option value="Medium">Medium</option>
+
+        <option value="Low">Low</option>
+
+    </select>
+
+    </div>
+
+        <p><strong>Status:</strong> Completed</p>
+
+        <p><strong>Deadline:</strong> 15 July 2026</p>
+
+        <div class="buttons">
+
+            <button class="view">View</button>
+
+            <button class="complete" disabled>Completed</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+}
+
+/* Navbar */
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 60px;
+
+    background:#2563eb;
+
+}
+
+.logo{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:25px;
+
+    font-size:17px;
+
+}
+
+nav a:hover,
+.active{
+
+    text-decoration:underline;
+
+}
+
+/* Hero */
+
+.hero{
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.hero h1{
+
+    color:#1e3a8a;
+
+    margin-bottom:10px;
+
+}
+
+.hero p{
+
+    color:#666;
+
+}
+
+/* Search Section */
+
+.controls{
+
+    width:90%;
+
+    margin:auto;
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.controls input,
+.controls select{
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+}
+
+.controls input{
+
+    width:320px;
+
+}
+
+/* Assignment Cards */
+
+.assignments{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+.card h2{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    margin:8px 0;
+
+    color:#555;
+
+}
+
+/* Priority */
+
+.high{
+
+    color:red;
+
+    font-weight:bold;
+
+}
+
+.medium{
+
+    color:orange;
+
+    font-weight:bold;
+
+}
+
+.low{
+
+    color:green;
+
+    font-weight:bold;
+
+}
+
+/* Buttons */
+
+.buttons{
+
+    margin-top:20px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+button{
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+}
+
+.view{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.complete{
+
+    background:#16a34a;
+
+    color:white;
+
+}
+
+button:hover{
+
+    opacity:0.9;
+
+}
+
+button:disabled{
+
+    background:#999;
+
+    cursor:not-allowed;
+
+}
+.priority-section{
+
+    margin:12px 0;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.priority-select{
+
+    padding:6px 10px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+}
