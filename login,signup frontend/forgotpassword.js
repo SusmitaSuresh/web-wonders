@@ -6,6 +6,12 @@ form.addEventListener("submit",function(event){
     if(email.trim()===""){
         document.getElementById("ee").textContent="Email is required";
     }
+    else{
+        document.getElementById("success").textContent ="✔ Password reset link sent successfully! Please check your email.";
+        setTimeout(function(){
+            window.location.href="login.html";
+        },3000);
+    }
     document.getElementById("email").addEventListener("input",function(){
          document.getElementById("ee").textContent="";
     });
